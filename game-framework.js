@@ -1,9 +1,30 @@
+/*
+
+TVO Game Framework
+0.0.0
+
+Description:
+
+Coats a base game library of our choosing with our own object that mixes in events and anything else we need.
+
+Usage:
+
+new GameInstance({ baseLibrary : [ base game class ], eventService : [ event provider singleton ] }, [ game library parameters ]);
+
+Eg:
+
+var game = new GameInstance({ baseLibrary : Phaser.Game, eventService : Backbone.Events }, 1024, 768 'myDiv', 'CANVAS');
+
+ */
+
+
+
 (function(window, factory){
 
     if (window.define) {
         define(factory);
     } else {
-        window['GFW'] = factory();
+        window['GameInstance'] = factory();
     }
 
 }(window, function() {
