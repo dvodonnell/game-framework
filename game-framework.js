@@ -92,6 +92,9 @@ var game = new GameInstance({ baseLibrary : Phaser.Game, eventService : Backbone
 
         var config = args.shift();
 
+        // Any intermediary handling we need to do (like merging together instance in to a single
+        // Phaser instance) can be nicely injected here
+
         localService.extend(Game.prototype, config.baseLibrary.prototype);
 
         return new Game({
