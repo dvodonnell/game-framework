@@ -1,0 +1,23 @@
+{
+  "name": "TVO Game Framework",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dvodonnell/game-framework",
+  "authors": [
+    "Dan O'Donnell <dodonnell@tvo.org>"
+  ],
+  "description": "Interface for spinning up games",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "phaser-official": "2.2.2"
+  },
+  "devDependencies": {
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
